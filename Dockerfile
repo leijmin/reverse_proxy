@@ -8,7 +8,7 @@ COPY nginx.conf /etc/nginx/nginx.conf
 COPY index.html /usr/share/nginx/html/index.html
 
 # 暴露 HTTP 端口
-EXPOSE 8080
+EXPOSE 80 
 
 # 启动 Nginx 服务
 CMD ["nginx", "-g", "daemon off;"]
